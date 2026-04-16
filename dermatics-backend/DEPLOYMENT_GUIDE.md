@@ -8,13 +8,13 @@ Complete step-by-step instructions for deploying the separated frontend (AWS Amp
 
 ```
 ┌─────────────────┐         ┌──────────────────────────┐        ┌───────────┐
-│  AWS Amplify     │  HTTPS  │  API Gateway + Lambda    │        │  MongoDB  │
-│  (React SPA)     │────────>│  (Express Backend)       │───────>│  Atlas    │
-│  Frontend        │         │                          │        └───────────┘
+│  AWS Amplify    │  HTTPS  │  API Gateway + Lambda    │        │  MongoDB  │
+│  (React SPA)    │────────>│  (Express Backend)       │───────>│  Atlas    │
+│  Frontend       │         │                          │        └───────────┘
 └─────────────────┘         │                          │        ┌───────────┐
-                             │                          │───────>│  AWS S3   │
-                             └──────────────────────────┘        │  (Images) │
-                                       │                         └───────────┘
+                            │                          │───────>│  AWS S3   │
+                            └──────────────────────────┘        │  (Images) │
+                                       │                        └───────────┘
                                        │                         ┌───────────┐
                                        └────────────────────────>│  Gemini   │
                                                                  │  AI API   │
